@@ -1,9 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --icons-color: #00C6C2;
+  --icons-light-color: #ffdf2b57;
+  --icons-bg-color: #00C6C2;
+  --shadow-dark-color: #0C0C31;
+  --bg-shadow-dark-color: #555557;
+  --shadow-light-color: #232325;
+  --main-bg-color: #140D32;
+  --overlay: #2323255e;
+  --color:#fff;
+  --light-color:#ffffff;
+
+  --box-shadow: 1px 1px 2px #0C0C31,
+  -1px -1px 2px #0C0C31;
+
+  --box-shadow-2:1px 1px 2px #0C0C31,
+  -1px -1px 2px #0C0C31;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 14px;
+  background-color: var(--main-bg-color);
+  color: var(--icons-color);
+}
+
+input{
+  color: var(--light-color);
+}
+
+input::placeholder{
+  color: var(--light-color);
+}
+
+textarea{
+  color: var(--light-color);
+}
+
+textarea::placeholder{
+  color: var(--light-color);
 }
 
 a {
@@ -13,14 +52,47 @@ a {
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: none;
 }
 
+::selection{
+  color: var(--shadow-dark-color);
+  background: var(--icons-color);
+}
+
+::-webkit-scrollbar{
+  width: 1rem;
+  border: 1px solid var(--main-bg-color);
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 0;
+  background-color: var(--main-bg-color);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 2rem;
+  background:  var(--icons-color);
+  width: .5rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
+    background: #0C0C31;
   }
 }
