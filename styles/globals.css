@@ -61,8 +61,8 @@ a {
 }
 
 ::-webkit-scrollbar{
-  width: 1rem;
-  border: 1px solid var(--main-bg-color);
+  width: 0.5rem;
+  border: 1px solid var(--bg-shadow-dark-color);
 }
 
 ::-webkit-scrollbar-track{
@@ -72,7 +72,7 @@ a {
 
 ::-webkit-scrollbar-thumb{
   border-radius: 2rem;
-  background:  var(--icons-color);
+  background:  var(--bg-shadow-dark-color);
   width: .5rem;
 }
 

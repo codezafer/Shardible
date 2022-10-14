@@ -2,12 +2,20 @@ import React,{useState} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { GrClose } from "react-icons/gr";
-import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter, TiSocialYoutube, TiSocialInstagram, TiArrowSortedUp, TiArrowSortedDown} from "react-icons/ti";
+import { TiSocialFacebook,
+         TiSocialLinkedin,
+         TiSocialTwitter,
+         TiSocialYoutube,
+         TiArrowSortedDown,
+         } from "react-icons/ti";
+import {TbBrandTelegram} from "react-icons/tb";
  
 //Internal import
 import Style from "./SideBar.module.css"
 import images from "../../../images";
 import Button from "../../Button/Button";
+
+
 const SideBar = ({setOpenSideMenu}) => {
 
     const[openExplore, setOpenExplore] = useState(false);
@@ -47,7 +55,7 @@ const SideBar = ({setOpenSideMenu}) => {
         />
 
         <div className={Style.sideBar_box}>
-            <Image src = {images.logo} alt ="logo" width={75} height={75}/>
+            <Image src = {images.logo} alt ="logo" width={100} height={20}/>
             <p>
                 Discover the most outstainding Nfts collections.
             </p>
@@ -63,6 +71,9 @@ const SideBar = ({setOpenSideMenu}) => {
                 </a>
                 <a href="#">
                     <TiSocialLinkedin/>
+                </a>
+                <a href="#">
+                    <TbBrandTelegram/>
                 </a>
             </div>
         </div>

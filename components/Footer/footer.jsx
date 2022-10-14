@@ -5,10 +5,9 @@ import {
   TiSocialLinkedin,
   TiSocialTwitter,
   TiSocialYoutube,
-  TiSocialInstagram,
-  TiArrowSortedDown,
-  TiArrowSortedUp,
 } from "react-icons/ti";
+import { TbBrandTelegram } from "react-icons/tb";
+
 
 
 import Style from "./footer.module.css";
@@ -18,10 +17,10 @@ import { Explore, Blog } from "../NavBar/index";
 const footer = () => {
   return (
     <div className={Style.footer}>
-    <div className={Style.footer_box}>
-      <div className={Style.footer_box_social}>
-      <Image src={images.logo} alt="footer logo" height={30} width={150} />
-     
+      <div className={Style.footer_box}>
+        <div className={Style.footer_box_social}>
+          <Image src={images.logo} alt="footer logo" height={30} width={150} />
+
         </div>
 
         <div className={Style.footer_box_explore}>
@@ -44,14 +43,14 @@ const footer = () => {
               <TiSocialYoutube />
             </a>
             <a href="#">
-              <TiSocialInstagram />
+              <TbBrandTelegram />
             </a>
           </div>
 
-          
-          </div>
-          </div>
-          </div>
+
+        </div>
+      </div>
+    </div>
   )
 }
 

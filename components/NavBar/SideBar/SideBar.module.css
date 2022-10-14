@@ -1,3 +1,4 @@
+
 .sideBar_box{
     padding: 2rem;
     border-bottom: 1px solid var(--icons-color);
@@ -5,7 +6,7 @@
 }
 
 .sideBar_box_logo{
-    font-size: 10rem;
+    font-size: 5rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
 }

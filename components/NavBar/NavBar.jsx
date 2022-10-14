@@ -5,9 +5,9 @@ import Link from "next/link";
 //--IMPORT ICONS
 import { MdNotifications } from 'react-icons/md';
 import { BsSearch } from "react-icons/bs";
-import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
+import { CgMenuLeft, CgMenuRight,CgProfile,RiArrowDropDownLine } from "react-icons/cg";
 
-
+//Internal import
 import Style from "./NavBar.module.css";
 import { Explore,SideBar } from './index';
 import {Button} from "../componentsindex";
@@ -44,7 +44,7 @@ const NavBar = () => {
           </div>
           <div className={Style.navbar_container_left_box_input}>
           <div className={Style.navbar_container_left_box_input_box}>
-            <input type="text" placeholder='Search NFTs,Collections' />
+            <input type="text" placeholder='Search NFTs,Collections..' />
             <BsSearch onClick={() => {}} className={Style.search_icon}/>
           </div>
           </div>
@@ -62,10 +62,11 @@ const NavBar = () => {
             )}
           </div>
           {/* button section  */}
+          
           <div className={Style.navbar_container_right_button}>
-            <Button btnName="Wallet" handleClick={() => {}}/>
+            <Button icon={<CgProfile/>} btnName="Connect Wallet" handleClick={() => {}}/>
           </div>
-
+          
           {/* MENU BUTTON */}
           <div className={Style.navbar_container_right_menuBtn}>
           <CgMenuRight
