@@ -1,93 +1,93 @@
-
-
-.subscribe{
+.subscribe {
     width: 100%;
 }
 
-.subscribe_box{
+.subscribe_box {
     width: 80%;
     margin: 0 auto;
-    padding:  8rem 0;
+    padding: 8rem 0;
 
     display: grid;
     grid-template-columns: 40% 60%;
     align-items: center;
 }
 
-.subscribe_box_left h2{
+.subscribe_box_left h2 {
     font-size: 3rem;
     line-height: 0;
 }
 
-.subscribe_box p{
+.subscribe_box p {
     font-size: 1.2rem;
 }
 
 
-.subscribe_box_right_input{
+.subscribe_box_right_input {
     margin-top: 2rem;
     padding: 1rem;
     width: 60%;
     border-radius: 1rem;
-    background-color: var(--icons-color);
+    background-color: var(--bg-shadow-dark-color);
     color: var(--main-bg-color);
     display: flex;
     align-items: center;
     margin-left: auto;
 }
 
-.subscribe_box_right_input button{
-    border-radius: 2px;
-    
-
+.subscribe_box_right_input button {
+    border-radius: 0.5rem;
+    background-color: var(--light-color);
+    color: var(--box-shadow);
+    cursor: pointer;
 }
 
 
-.subscribe_box_right_input input{
+.subscribe_box_right_input input {
     background-color: transparent;
     border: 0;
     outline: none;
     width: 90%;
 }
 
-.subscribe_box_right_input input::placeholder{
+.subscribe_box_right_input input::placeholder {
     color: var(--main-bg-color);
     font-size: 1.2rem;
 }
 
-.subscribe_box_right_input_icon{
+.subscribe_box_right_input_icon {
     font-size: 2rem;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 768px){
-    .subscribe_box{
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .subscribe_box {
         width: 90%;
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-    .subscribe_box_right_input{
+
+    .subscribe_box_right_input {
         width: 100%;
         padding: 1rem;
     }
 
-    .subscribe_box_left h2{
+    .subscribe_box_left h2 {
         font-size: 2rem;
     }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-    .subscribe_box{
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .subscribe_box {
         width: 90%;
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
     }
 
-    .subscribe_box_right_input{
+    .subscribe_box_right_input {
         width: 100%;
         padding: 1rem;
     }
 
-    .subscribe_box_left h2{
+    .subscribe_box_left h2 {
         font-size: 2rem;
     }
 }

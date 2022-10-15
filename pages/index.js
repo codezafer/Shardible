@@ -4,13 +4,15 @@ import Style from "../styles/index.module.css";
 import { HeroSection } from '../components/componentsindex';
 import { Subscribe } from '../components/componentsindex';  
 import { Category } from '../components/componentsindex';
-import { NFTCards } from '../components/componentsindex';
+import { TrendCollection } from '../components/componentsindex';
+import { Slider } from '../components/componentsindex';
 
 const Home = () => {
   return  (
     <div className={Style.homePage}>
       <HeroSection/>
-      <NFTCards/>
+      <TrendCollection/>
+      <Slider/>
       <Category/>
       <Subscribe/>
     </div>

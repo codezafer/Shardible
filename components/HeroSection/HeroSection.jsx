@@ -4,7 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, EffectFade } from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
-import  SwiperCore,{ Autoplay } from 'swiper';
+import SwiperCore, { Autoplay } from 'swiper';
+import { Pagination } from "swiper";
+
 
 import Style from './HeroSection.module.css';
 import { Button } from '../componentsindex';
@@ -14,6 +16,10 @@ import 'swiper/css';
 SwiperCore.use([Autoplay])
 
 const HeroSection = () => {
+    // const NFT = [{
+    //     Image: "./images/Hero1"
+    // }]
+
     return (
         <div className={Style.heroSection}>
             <div className={Style.heroSection_box}>
@@ -29,19 +35,22 @@ const HeroSection = () => {
                 </div>
                 <div className={Style.heroSection_box_right}>
                     <Swiper
-                        modules={[Navigation, EffectFade]}
+                        modules={[Navigation, EffectFade, Pagination]}
                         navigation
                         effect={'fade'}
                         speed={1}
                         slidesPerView={1}
-                        autoplay ={{
-                         delay:2000
+                        autoplay={{
+                            delay: 2000
+                        }}
+                        pagination={{
+                            dynamicBullets: true,
                         }}
                         loop
                         className={Style.myswiper}
                     >
                         <SwiperSlide className={Style.swiperslide}>
-                            <Image src={images.Hero1} alt="NFT" />
+                        <Image src={images.Hero1} alt="NFT" />
                         </SwiperSlide>
                         <SwiperSlide className={Style.swiperslide}>
                             <Image src={images.Hero2} alt="NFT" />
@@ -53,7 +62,7 @@ const HeroSection = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default HeroSection
+export default HeroSection;

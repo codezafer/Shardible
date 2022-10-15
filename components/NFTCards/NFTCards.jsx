@@ -13,9 +13,9 @@ const NFTCards = () => {
   return (
     < div className={Style.box_NFTCards}>
       <div className={Style.NFTCardsHead}>
-          <h1>Launching Soon</h1>
-          <button>See all</button>
-        </div>
+        <h1>Launching Soon</h1>
+        <button>See all</button>
+      </div>
       <div className={Style.NFTCards}>
         {NFTCardsArray.map((el, i) => (
           <div className={Style.NFTCards_box} key={1 + 1}>
@@ -32,15 +32,15 @@ const NFTCards = () => {
               <div className={Style.NFTCards_box_title_info}>
                 <h4>Artwork</h4>
                 <div className={Style.NFTCard_box_update_right}>
-              <div className={Style.NFTCard_box_update_right_info}>
-                <p>3h : 15m : 20s</p>
-              </div>
-            </div>
+                  <div className={Style.NFTCard_box_update_right_info}>
+                    <p>3h : 15m : 20s</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         ))}
-        
+
       </div>
     </div>
   );

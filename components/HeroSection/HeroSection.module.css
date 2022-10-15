@@ -1,60 +1,71 @@
-
-.heroSection{
+.heroSection {
     width: 80%;
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 
-.heroSection_box{
+.heroSection_box {
     display: grid;
     grid-template-columns: 45% 20%;
     gap: 8rem;
 }
 
-.heroSection_box_left{
+.heroSection_box_left {
     padding-right: 6rem;
 }
 
-.heroSection_box_left h1{
+.heroSection_box_left h1 {
     font-size: 4rem;
     line-height: 1;
 }
 
-.heroSection_box_left p{
-    margin-bottom:  2rem;
+.heroSection_box_left p {
+    margin-bottom: 2rem;
     font-size: 1.5rem;
 }
 
-.myswiper{
+.heroSection_box_right {
+    margin: 0 auto;
+}
+
+.myswiper {
     width: 400px;
     height: 400px;
     object-fit: cover;
     margin-left: auto;
-    } 
+}
 
-@media screen and (max-width: 35em) {
-    .heroSection{
+@media screen and (max-width: 560px) {
+    .heroSection {
         width: 90%;
+    }
+
+    .myswiper {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 0 auto;
     }
 }
 
-@media screen and (max-width: 55em) {
-    .heroSection_box{
+@media screen and (max-width: 880px) {
+    .heroSection_box {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
 
-    .heroSection_box_left{
+    .heroSection_box_left {
         padding-right: 2rem;
     }
 
-    .heroSection_box_left h1{
+    .heroSection_box_left h1 {
         line-height: 1;
         font-size: 3rem;
     }
 
-    .myswiper{
-        width: 600px;
-        height: 600px;
+    .swiperslide {
+        width: 400px;
+        height: 400px;
         object-fit: cover;
-        } 
+        margin: 0 auto;
+    }
 }
